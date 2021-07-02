@@ -1,0 +1,321 @@
+@font-face {
+    font-family: Acumin;
+    font-weight: bold;
+    src: url("Acumin-BdPro.otf") format("opentype");
+}
+
+#app-container{
+    width: 100%;
+    max-width: none;
+}
+
+body{
+    background-color: #f9f9f9;
+    color: #333333;
+    font-size: 15px;
+    margin: 0px;
+}
+.dot{
+    justify-items: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #333333;
+    display: inline-block;
+    margin: 10px;
+    
+}
+.number-circle{
+    border-radius: 50%;
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0.1em;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 24px Arial, sans-serif;
+    margin-top: 15px;
+
+}
+hr{
+    margin: 0.3rem 0rem;
+}
+
+.tooltip {
+    /*font-size: 18px;
+    max-width: 600px;
+    width: 300px;
+    border-style: groove;
+    border-radius: 10px;*/
+    background-color: white;
+
+}
+
+.banner {
+    height: 7.5rem;
+    padding: 0rem 2rem 0rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner Img {
+    position: relative;
+    height: 6rem;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+H5 {
+    color: #2c8cff;
+
+    font-weight: 300;
+}
+
+H6, H5, H3 {
+    font-family: Acumin, "Helvetica Neue", sans-serif;
+}
+
+H6{
+    font-weight:bold;
+}
+
+
+/* #left-column2 {
+    margin-top: 20px;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 5.5rem);
+} 
+*/
+
+#left-column{
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: calc(100vh - 5.5rem);
+    background-color: #ffffff;
+}
+#middle-column{
+    background-color: #E5EBF4;
+    padding: 0rem 2rem;
+    align-items: center;
+    opacity: 0.92;
+    min-height: calc(100vh - 5.5rem);
+}
+#right-column{
+    background-color: #A9BDDB;
+    padding: 0rem 2rem;
+    align-items: center;
+    min-height: calc(100vh - 5.5rem);
+}
+
+
+.table-row{
+    height: 63px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+/* .wait_time_graph > div, .patient_score_graph > div {
+    height: 100% !important;
+    width: 100% !important;
+} */
+
+.draglayer {
+    cursor: pointer !important;
+}
+
+#top-bar{
+    background-color: #2c8cff;
+    /* background-color: #fa4f56; */
+    height: 5px;
+  }
+
+
+#intro {
+    margin: 20px 0px;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: justify;
+}
+
+#control-card > p {
+    font-weight: bold;
+}
+
+#config-card > p {
+    font-weight: bold;
+}
+
+
+#upload-image {
+    border-style: dashed;
+    border-color: #2c8cff;
+    border-radius: 5px;
+    border-Width: 2px;
+}
+
+
+#table{
+    padding: 2rem 0rem;
+
+}
+
+#slider-alpha{
+    padding: 0rem 0rem;
+}
+
+#architecture-dropdown{
+    padding: 2rem 0rem;
+}
+
+#heatmap-dropdown{
+
+    padding: 2rem 0rem;    
+}
+
+#gradcam-dropdown{
+    padding: 2rem 0rem;
+}
+
+
+
+.table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.row-department > b {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header_wait_time_min, #header_care_score {
+    display: table;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1005; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .markdown-container {
+    width: 60vw;
+    margin: 10% auto;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .markdown-container img {
+      max-width:90%;
+      height: 46rem;
+      position: relative;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+/*
+  ##Device = Most of the Smartphones Mobiles / ipad (Portrait)
+  */
+
+@media only screen and (max-width: 750px), screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    .banner {
+        height: 6rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        margin: 10px 0px;
+    }
+
+    #left-column, #middle-column, #right-column {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /* #right-column {
+        padding: 0rem 0.5rem;
+    } */
+
+    #reset-btn-outer {
+        text-align: center;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+
+    .table-row > div {
+        width: 100% !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .table-row:nth-child(even), .table-row:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+
+    #header {
+        display: none;
+    }
+
+    #wait_time_table:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #patient_volume_card > b, #wait_time_card > b {
+        line-height: 2.5;
+        font-size: 13px;
+        display: block;
+        text-align: center;
+    }
+
+    .annotation-text {
+        font-size: 0.8rem !important;
+    }
+
+}
